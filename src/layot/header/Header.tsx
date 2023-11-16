@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../components/Container";
-import Logo from "../../components/logo/Logo";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import Icon from "../../components/icon/Icon";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
-import {Theme} from "../../styles/Theme";
+
 
 const items = ["Home", "About", "Tech Stack", "Project", "Contact"]
 export const Header = () => {

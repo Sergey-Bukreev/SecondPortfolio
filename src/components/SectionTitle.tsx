@@ -3,10 +3,12 @@ import {Theme} from "../styles/Theme";
 
 export const SectionTitle = styled.h2`
   text-align: center;
+  margin-top: 20px;
   
-  font-family: Josefin Sans,serif;
+  font-family: Poppins,serif;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 26px;
   letter-spacing: 5px;
   margin-bottom: 90px;
   
@@ -15,8 +17,8 @@ export const SectionTitle = styled.h2`
   &::before {
     content: "";
     display: inline-block;
-    width: 55px;
-    height: 1px;
+    width: 140px;
+    height: 2px;
     background-color: ${Theme.colors.accent};
     position: absolute;
     left: 50%;

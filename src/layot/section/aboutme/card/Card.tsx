@@ -4,7 +4,7 @@ import Icon from "../../../../components/icon/Icon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 type CardPropsType ={
     speciality: string
-    description: string
+   location: string
     place: string
     period: string
 }
@@ -13,33 +13,44 @@ type CardPropsType ={
     return (
         <StyledCard>
             <FlexWrapper align={"center"}>
-                <UpElementTitle>{props.speciality}</UpElementTitle>
-                <UpElementText>{props.description}</UpElementText>
+                <Speciality>{props.speciality}</Speciality>
+
             </FlexWrapper>
-            <FlexWrapper align={"center"}>
-                <Icon iconId={"building"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
-                <DownElementTitle>{props.place}</DownElementTitle>
+
+            <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper >
+                    <Icon iconId={"building"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
+                    <Place>{props.place}</Place>
+                    <Icon iconId={"location"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
+                    <Location>{props.location}</Location>
+                </FlexWrapper>
+
+
                 <Icon iconId={"calendar"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
-                <DownElementText>{props.period}</DownElementText>
+                <Date>{props.period}</Date>
             </FlexWrapper>
         </StyledCard>
     );
 };
 
 const StyledCard = styled.div`
-border: black 1px solid;
-  min-width: 100vh;
-  
-`
-const UpElementTitle = styled.p``
-const UpElementText = styled.span`
-  font-size: 12px;
-  
-`
-const DownElementTitle = styled.p`
-  font-size: 12px;
-`
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 8px;
+  padding: 16px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 
-const DownElementText = styled.span`
+`
+const Speciality = styled.p``
+
+const Place = styled.p`
+  font-size: 12px;
+`
+const Location = styled.p``
+const Date = styled.span`
   font-size: 12px;
 `

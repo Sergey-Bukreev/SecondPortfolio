@@ -47,6 +47,6 @@ const Link = styled.a`
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
-  color: ${Theme.colors.fontThird};
+  color: ${Theme.colors.font};
   
 `
