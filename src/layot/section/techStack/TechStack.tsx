@@ -35,6 +35,14 @@ import {Icon} from "../../../components/icon/Icon";
 };
 
 const StyledTechStack = styled.section`
-min-height: 60vh;
+  
 `
-const Text = styled.span``
+const Text = styled.span`
+  text-align: center;
+  font-family: Poppins,serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 26px; /* 81.25% */
+ display: block;
+  margin-bottom: 30px;
+`
