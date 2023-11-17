@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
 background-color: ${Theme.colors.primaryBg};
   }
   section:nth-of-type(even) {
-    background-color: ${Theme.colors.secondaryBg};
+    background-color: ${Theme.colors.primaryBg};
   }
   h3 {
     font-family: Josefin Sans,serif;

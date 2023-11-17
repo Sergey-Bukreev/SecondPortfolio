@@ -5,6 +5,7 @@ import {Header} from "./layot/header/Header";
 import {Maine} from "./layot/section/maine/Maine";
 import {TechStack} from "./layot/section/techStack/TechStack";
 import {AboutMe} from "./layot/section/aboutme/AboutMe";
+import {Projects} from "./layot/section/projects/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Maine />
         <AboutMe />
       <TechStack />
+        <Projects />
 
     </div>
   );
