@@ -53,13 +53,13 @@ const StyledHeaderSecond=styled.header`
   z-index: 99999;
   
 `
-const SocialList = styled.ul`
+ export const SocialList = styled.ul`
   display: flex;
   gap: 20px;
  
 `
-const SocialItem = styled.li``
-const SocialLink = styled.a`
+export const SocialItem = styled.li``
+ export const SocialLink = styled.a`
   border-radius: 50%;
   
   display: flex;

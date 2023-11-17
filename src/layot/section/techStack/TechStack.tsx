@@ -37,7 +37,7 @@ import {Icon} from "../../../components/icon/Icon";
 const StyledTechStack = styled.section`
   
 `
-const Text = styled.span`
+ export const Text = styled.span`
   text-align: center;
   font-family: Poppins,serif;
   font-size: 32px;
