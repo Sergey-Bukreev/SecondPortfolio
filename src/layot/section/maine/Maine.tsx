@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MainePhoto from "./../../../assets/images/photo-2.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {SectionTitle} from "../../../components/SectionTitle";
 
 export const Maine = () => {
     return (
@@ -12,12 +13,12 @@ export const Maine = () => {
                     <div>
                         <Text>Hi There</Text>
                         <Text>My name is <span>Sergey Bukreev</span></Text>
-
                         <Text>I build things for WEB</Text>
                     </div>
                     <PhotoWrapper>
                         <Photo src={MainePhoto}/>
                     </PhotoWrapper>
+
 
 
                 </FlexWrapper>
@@ -32,6 +33,7 @@ const StyledMaine = styled.section`
   min-height: 60vh;
   background-color: snow;
   display: flex;
+  
 `
 
 const PhotoWrapper = styled.div`

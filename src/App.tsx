@@ -8,6 +8,7 @@ import {AboutMe} from "./layot/section/aboutme/AboutMe";
 import {Projects} from "./layot/section/projects/Projects";
 import {Contacts} from "./layot/section/contacts/Contacts";
 import {Footer} from "./layot/footer/Footer";
+import {Education} from "./layot/section/education/Education";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Maine />
         <AboutMe />
+        <Education />
       <TechStack />
         <Projects />
         <Contacts />
