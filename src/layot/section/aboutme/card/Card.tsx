@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import Icon from "../../../../components/icon/Icon";
+
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {Icon} from "../../../../components/icon/Icon";
+import {Theme} from "../../../../styles/Theme";
 type CardPropsType ={
     speciality: string
    location: string
@@ -12,43 +14,67 @@ type CardPropsType ={
  export const Card = (props:CardPropsType) => {
     return (
         <StyledCard>
-            <FlexWrapper align={"center"}>
+
                 <Speciality>{props.speciality}</Speciality>
-
-            </FlexWrapper>
-
             <FlexWrapper align={"center"} justify={"space-between"}>
-                <FlexWrapper >
+                <FlexWrapper align={"center"} justify={"space-between"} >
                     <Icon iconId={"building"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
                     <Place>{props.place}</Place>
+
                     <Icon iconId={"location"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
                     <Location>{props.location}</Location>
                 </FlexWrapper>
 
+                <FlexWrapper align={"center"} justify={"space-between"} >
+                    <Icon iconId={"calendar"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
+                     <Date>{props.period}</Date>
+                </FlexWrapper>
 
-                <Icon iconId={"calendar"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
-                <Date>{props.period}</Date>
             </FlexWrapper>
         </StyledCard>
     );
 };
 
 const StyledCard = styled.div`
-  border: 1px solid black;
+  
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 8px;
   padding: 16px;
   align-items: center;
-  width: 100%;
+  
+  width: 60%;
   margin: 0 auto;
+ 
 
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: ${Theme.colors.accent};
+    position: absolute;
+    bottom: -1px;
+    
+    
+    
+  
 `
-const Speciality = styled.p``
+const Speciality = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: Poppins, serif;
+  font-weight: 400;
+  line-height: 28px;
+`
 
 const Place = styled.p`
   font-size: 12px;
+  margin-right: 20px;
 `
 const Location = styled.p``
 const Date = styled.span`

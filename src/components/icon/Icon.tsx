@@ -5,6 +5,7 @@ type IconPropsType = {
     width?:string
     height?:string
     viewBox?:string
+
 }
 export const Icon = (props:IconPropsType) => {
     return (
@@ -16,4 +17,4 @@ export const Icon = (props:IconPropsType) => {
     );
 };
 
-export default Icon;
+
