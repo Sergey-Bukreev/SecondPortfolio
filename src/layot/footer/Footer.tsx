@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {HeaderMenu} from "../header/headerMenu/HeaderMenu";
+import {DesktopMenu} from "../header/headerMenu/desktopMenu/DesktopMenu";
 import {Theme} from "../../styles/Theme";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";

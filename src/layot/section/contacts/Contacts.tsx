@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
+
 import {Theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Icon} from "../../../components/icon/Icon";
-import {SocialItem, SocialLink, SocialList} from "../../header/Header";
+
+
 import {Container} from "../../../components/Container";
 import {font} from "../../../styles/Common";
+import {SocialList} from "../../header/socialList/SocialList";
+
 
 export const Contacts = () => {
     return (
@@ -21,24 +23,8 @@ export const Contacts = () => {
 
                    <ContactLinkSmall>+91 12345 09876</ContactLinkSmall>
                    <ContactLinkSmall href={"https://instagram.com/bukreev94?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr"}>instagram.com/bukreev94</ContactLinkSmall>
+                    <SocialList />
 
-                   <SocialList>
-                       <SocialItem>
-                           <SocialLink>
-                               <Icon iconId={"github"} width={"32"} height={"32"} viewBox={"0, 0, 32, 32"}  />
-                           </SocialLink>
-                       </SocialItem>
-                       <SocialItem>
-                           <SocialLink>
-                               <Icon iconId={"twitter"} width={"32"} height={"32"} viewBox={"0, 0, 32, 32"} />
-                           </SocialLink>
-                       </SocialItem>
-                       <SocialItem>
-                           <SocialLink>
-                               <Icon iconId={"linkd"} width={"32"} height={"32"} viewBox={"0, 0, 32, 32"} />
-                           </SocialLink>
-                       </SocialItem>
-                   </SocialList>
 
                </FlexWrapper>
            </Container>
