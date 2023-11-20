@@ -4,17 +4,20 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {Icon} from "../../components/icon/Icon";
+import {MobileMenu} from "./MobileMenu/MobileMenu";
+import {Theme} from "../../styles/Theme";
 
 
 const items = ["Home", "About", "Tech Stack", "Project", "Contact"]
 export const Header = () => {
     return (
-        <StyledHeaderSecond>
+        <StyledHeader>
             <Container>
 
                 <FlexWrapper justify={"space-around"} align={"center"}  >
 
                     <HeaderMenu menuItems={items} />
+                    <MobileMenu menuItems={items} />
                     <SocialList>
                         <SocialItem>
                             <SocialLink>
@@ -39,11 +42,11 @@ export const Header = () => {
 
             </Container>
 
-        </StyledHeaderSecond>
+        </StyledHeader>
     );
 };
 
-const StyledHeaderSecond=styled.header`
+const StyledHeader=styled.header`
   background: rgba(31, 31, 32, 0.9) ;
   padding: 20px 0;
   position: fixed;
@@ -51,14 +54,21 @@ const StyledHeaderSecond=styled.header`
   left: 0;
   right: 0;
   z-index: 99999;
-  
+ 
 `
  export const SocialList = styled.ul`
   display: flex;
   gap: 20px;
+   
+
+   @media ${Theme.media.tablet} {
+  display: none;
+     
+}
+ `
+export const SocialItem = styled.li`
  
 `
-export const SocialItem = styled.li``
  export const SocialLink = styled.a`
   border-radius: 50%;
   
@@ -68,4 +78,4 @@ export const SocialItem = styled.li``
   &:hover {
     transform: scale(1.3);
   }
-`
+ `

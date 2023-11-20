@@ -26,9 +26,12 @@ const StyledHeaderMenuSecond = styled.nav`
     display: flex;
     gap: 30px;
     justify-content: center;
-    color: black;
+    
   }
-
+  
+  @media ${Theme.media.tablet} {
+    display: none;
+  }
 `
 const ListItem = styled.li`
 

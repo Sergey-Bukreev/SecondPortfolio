@@ -20,6 +20,8 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${Theme.colors.font};
     line-height: 1.2;
+    
+  
   }
 
   a {
@@ -58,4 +60,7 @@ background-color: ${Theme.colors.primaryBg};
     font-weight: 400;
     line-height: 1.4;
   }
+  
+  
+  
 `

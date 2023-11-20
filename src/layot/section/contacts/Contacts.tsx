@@ -15,7 +15,8 @@ export const Contacts = () => {
                <ContactLink>bukreevwork2@gmail.com</ContactLink>
                <div></div>
 
-               <FlexWrapper align={"flex-end"} justify={"right"}>
+               <FlexWrapper align={"flex-end"} justify={"space-around"}>
+                   <Name>Sergey Bukreev</Name>
 
                    <ContactLinkSmall>+91 12345 09876</ContactLinkSmall>
                    <ContactLinkSmall href={"https://instagram.com/bukreev94?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr"}>instagram.com/bukreev94</ContactLinkSmall>
@@ -82,4 +83,14 @@ const ContactLinkSmall = styled.a`
     cursor: pointer;
 
 
+`
+const  Name = styled.p`
+  font-family: DM Sans, serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+  margin-right: 20px;
+  background:${Theme.colors.fontSecond};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
