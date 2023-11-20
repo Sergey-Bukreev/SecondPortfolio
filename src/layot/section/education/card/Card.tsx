@@ -16,8 +16,8 @@ type CardPropsType ={
         <StyledCard>
 
                 <Speciality>{props.speciality}</Speciality>
-            <FlexWrapper align={"center"} justify={"space-between"}>
-                <FlexWrapper align={"center"} justify={"space-between"} >
+            <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"} >
                     <Icon iconId={"building"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
                     <Place>{props.place}</Place>
 
@@ -25,7 +25,7 @@ type CardPropsType ={
                     <Location>{props.location}</Location>
                 </FlexWrapper>
 
-                <FlexWrapper align={"center"} justify={"space-between"} >
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <Icon iconId={"calendar"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
                      <Date>{props.period}</Date>
                 </FlexWrapper>
@@ -44,7 +44,7 @@ const StyledCard = styled.div`
   padding: 16px;
   align-items: center;
   
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
  
 
@@ -58,7 +58,10 @@ const StyledCard = styled.div`
     position: absolute;
     bottom: -1px;
     
-    
+    @media ${Theme.media.mobile} {
+    bottom: -18px;
+    }
+  }
     
   
 `

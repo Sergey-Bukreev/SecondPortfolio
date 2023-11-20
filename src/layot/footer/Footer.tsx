@@ -9,10 +9,9 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper justify={"space-between"}>
-                    <HeaderMenu menuItems={items} />
-                    <Copyright>© 2023 Sergey Bukreev, All Rights Reserved.</Copyright>
-                </FlexWrapper>
+
+                <Copyright>© 2023 Sergey Bukreev, All Rights Reserved.</Copyright>
+
             </Container>
 
         </StyledFooter>

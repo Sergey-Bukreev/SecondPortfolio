@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Icon} from "../../../components/icon/Icon";
 import {SocialItem, SocialLink, SocialList} from "../../header/Header";
 import {Container} from "../../../components/Container";
+import {font} from "../../../styles/Common";
 
 export const Contacts = () => {
     return (
@@ -15,7 +16,7 @@ export const Contacts = () => {
                <ContactLink>bukreevwork2@gmail.com</ContactLink>
                <div></div>
 
-               <FlexWrapper align={"flex-end"} justify={"space-around"}>
+               <FlexWrapper align={"flex-end"} justify={"space-around"} wrap={"wrap"}>
                    <Name>Sergey Bukreev</Name>
 
                    <ContactLinkSmall>+91 12345 09876</ContactLinkSmall>
@@ -49,19 +50,21 @@ const StyledContacts = styled.section`
 div {
   margin-bottom: 140px;
 }
+  @media ${Theme.media.mobile} {
+    div {
+      margin-bottom: 40px;
+    }
+  }
 `
 const Title = styled.h2`
-  font-family: DM Sans, serif;
-  font-size: 58px;
-  font-style: normal;
-  font-weight: 700;
+  ${font({family:"DM Sans, serif", weight:700, Fmax:58, Fmin:36})}
+  
   line-height: 70px; /* 120.69% */
   letter-spacing: -1px;
 `
 const ContactLink = styled.a`
-  font-family: DM Sans, serif;
-  font-size: 58px;
-  font-weight: 700;
+  ${font({family:"DM Sans, serif", weight:700, Fmax:58, Fmin:28})}
+  
   line-height: 70px; /* 120.69% */
   letter-spacing: -1px;
   background:${Theme.colors.fontSecond};
