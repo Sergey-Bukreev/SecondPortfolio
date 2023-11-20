@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Text} from "../techStack/TechStack";
 import {ProjectCard} from "./projectCard/ProjectCard";
@@ -7,11 +6,10 @@ import PhotoProject1 from "./../../../assets/images/PhotoProject1.webp"
 import PhotoProject2 from "./../../../assets/images/PhotoProject2.webp"
 import PhotoProject3 from "./../../../assets/images/PhotoProject3.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Container} from "../../../components/Container";
-import {Theme} from "../../../styles/Theme";
+import {S} from "./Project_Style"
 export const Projects = () => {
     return (
-        <StyledProjects>
+        <S.Projects>
 
                 <SectionTitle>Projects</SectionTitle>
                 <Text>Things I’ve built so far</Text>
@@ -25,11 +23,7 @@ export const Projects = () => {
 
 
 
-        </StyledProjects>
+        </S.Projects>
     );
 };
 
-const StyledProjects = styled.section`
-
-
-`
