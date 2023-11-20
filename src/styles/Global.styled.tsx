@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   section {
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   section:nth-of-type(odd) {

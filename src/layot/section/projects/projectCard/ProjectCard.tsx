@@ -68,6 +68,7 @@ const ProjectDescription = styled.span`
   font-weight: 300;
   line-height: 26px; /* 144.444% */
   text-align: left;
+  padding: 0 5px;
   
   
 `

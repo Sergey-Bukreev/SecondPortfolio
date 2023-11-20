@@ -12,7 +12,7 @@ import {Theme} from "../../../styles/Theme";
 export const Projects = () => {
     return (
         <StyledProjects>
-            <Container>
+
                 <SectionTitle>Projects</SectionTitle>
                 <Text>Things I’ve built so far</Text>
                 <FlexWrapper justify={"space-around"} wrap={"wrap"} align={"center"} >
@@ -22,7 +22,7 @@ export const Projects = () => {
 
                 </FlexWrapper>
 
-            </Container>
+
 
 
         </StyledProjects>
