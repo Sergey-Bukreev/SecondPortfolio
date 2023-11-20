@@ -1,14 +1,12 @@
 import styled from "styled-components";
 import {Theme} from "../styles/Theme";
+import {font} from "../styles/Common";
 
 export const SectionTitle = styled.h2`
   text-align: center;
   margin-top: 20px;
-  
-  font-family: Poppins,serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 26px;
+
+${font({family:"Poppins,serif", weight:700, Fmax: 48, Fmin:36})}
   letter-spacing: 5px;
   margin-bottom: 90px;
   
