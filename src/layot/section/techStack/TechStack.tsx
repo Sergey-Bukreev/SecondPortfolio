@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Icon} from "../../../components/icon/Icon";
 
- export const TechStack = () => {
+ export const TechStack:React.FC = () => {
     return (
         <StyledTechStack>
             <Container>

@@ -1,7 +1,8 @@
 import {Theme} from "../styles/Theme";
 import styled from "styled-components";
+import React from "react";
 
-export const Link = styled.a`
+export const Link:React.FC = styled.a`
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1px;

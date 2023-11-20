@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import React from "react";
 
-export const Container = styled.div`
+export const Container:React.FC = styled.div`
 max-width: 1170px;
   width: 100%;
   min-height: 100%;
