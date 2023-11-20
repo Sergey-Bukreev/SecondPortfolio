@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../styles/Theme";
 type FlexWrapperPropsType = {
     direction?: string
     justify?: string
     align?: string
     wrap?: string
+
 
 }
 
@@ -16,4 +18,6 @@ display: flex;
   align-items: ${props => props.align || "stretch"};
   flex-wrap: ${props => props.wrap || "nowrap"};
   height: 100%;
+ 
+  
 `

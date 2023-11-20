@@ -3,13 +3,15 @@ import styled from "styled-components";
 import MainePhoto from "./../../../assets/images/photo-2.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
-import {SectionTitle} from "../../../components/SectionTitle";
+import {Theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
+
 
 export const Maine = () => {
     return (
         <StyledMaine>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"}>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap-reverse"}>
                     <div>
                         <Text>Hi There</Text>
                         <Text>My name is <span>Sergey Bukreev</span></Text>
@@ -34,6 +36,7 @@ const StyledMaine = styled.section`
   background-color: snow;
   display: flex;
   
+ 
 `
 
 const PhotoWrapper = styled.div`
@@ -43,6 +46,10 @@ const PhotoWrapper = styled.div`
   border-radius: 50%;
   padding: 10px;
 
+  @media ${Theme.media.tablet} {
+    width: 270px;
+    height: 270px;
+  }
 `
 
 
@@ -52,15 +59,21 @@ const Photo = styled.img`
   border-radius: 50%;
   object-fit: cover;
  
+  @media ${Theme.media.tablet} {
+    width: 250px;
+    height: 250px;
+   
+  }
 `
 
 const Text = styled.h2`
-  font-family: Poppins,serif;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 700;
+  ${font({family:"Poppins,serif", weight:400, Fmax:38, Fmin:24})}
+ 
   line-height: 70px; /* 120.69% */
   letter-spacing: -1px;
+  @media ${Theme.media.tablet} {
+    line-height: 50px;
+  }
   span {
     background: linear-gradient(to left, #360dde, #0dbad7);
     -webkit-background-clip: text;
