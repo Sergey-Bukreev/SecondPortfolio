@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   section {
-    padding: 40px 0;
+    padding: 80px 0;
   }
 
   section:nth-of-type(odd) {
@@ -59,6 +59,7 @@ background-color: ${Theme.colors.primaryBg};
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
+    padding-bottom: 40px;
   }
   
   

@@ -43,7 +43,7 @@ const ContactLinkSmall = styled.a`
 
 
 `
-const  Name = styled.p`
+const  Name = styled.span`
   font-family: DM Sans, serif;
   font-size: 24px;
   font-weight: 400;
