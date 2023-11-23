@@ -7,10 +7,10 @@ import {ProjectCard} from "../projectCard/ProjectCard";
 import PhotoProject1 from "../../../../assets/images/PhotoProject1.webp"
 import PhotoProject2 from "../../../../assets/images/PhotoProject2.webp"
 import PhotoProject3 from "../../../../assets/images/PhotoProject3.webp"
-
+import "./../../../../styles/Slider.css"
 const projects = [
     {
-        title: "Project Tile goes here 1",
+        title: "Project  1",
         text: "This is sample project description 1. Random things are here in description. This is sample project lorem ipsum generator for dummy content.",
         src: PhotoProject1
     },
@@ -36,7 +36,7 @@ const items = [
 
 ];
 
- export const Slider = () => (
+ export const Slider:React.FC = () => (
 
        <S.Slider>
            <AliceCarousel
