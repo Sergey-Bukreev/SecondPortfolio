@@ -11,7 +11,7 @@ const EducationData = [
 ]
 
 
-export const Education = () => {
+export const Education:React.FC = () => {
 
     const listEducation = EducationData.map((ed: any) => <Card key={"index"} {...ed}/>)
 

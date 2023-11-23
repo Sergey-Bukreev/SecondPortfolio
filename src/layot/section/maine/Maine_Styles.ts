@@ -39,7 +39,7 @@ const Photo = styled.img`
 `
 
 const Text = styled.h2`
-  ${font({family:"Poppins,serif", weight:400, Fmax:38, Fmin:24})}
+  ${font({family:"Poppins,sans-serif", weight:400, Fmax:38, Fmin:24})}
  
   line-height: 70px; 
   letter-spacing: -1px;
@@ -53,7 +53,7 @@ const Text = styled.h2`
   }
 `
 const MaineText = styled.h1`
-  ${font({family:"Poppins,serif", weight:400, Fmax:38, Fmin:24})}
+  ${font({family:"Poppins,sans-serif", weight:400, Fmax:38, Fmin:24})}
  
   line-height: 70px; 
   letter-spacing: -1px;

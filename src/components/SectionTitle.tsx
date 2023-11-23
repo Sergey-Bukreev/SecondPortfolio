@@ -6,7 +6,7 @@ export const SectionTitle = styled.h2`
   text-align: center;
   margin-top: 20px;
 
-${font({family:"Poppins,serif", weight:700, Fmax: 48, Fmin:36})}
+${font({family:"Poppins,sans-serif", weight:700, Fmax: 48, Fmin:36})}
   letter-spacing: 5px;
   margin-bottom: 90px;
   

@@ -6,7 +6,7 @@ import {S} from "./Maine_Styles"
 
 
 
-export const Maine = () => {
+export const Maine: React.FC = () => {
     return (
         <S.Maine>
             <Container>

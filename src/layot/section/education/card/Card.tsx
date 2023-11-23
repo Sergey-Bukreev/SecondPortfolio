@@ -10,7 +10,7 @@ type CardPropsType = {
     period: string;
 };
 
- export const Card = (data: CardPropsType) => {
+ export const Card:React.FC<CardPropsType> = (data: CardPropsType) => {
     const iconData = [
         { iconId: "building", value: data.place },
         { iconId: "location", value: data.location },
