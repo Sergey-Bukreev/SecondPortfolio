@@ -9,11 +9,14 @@ import {Projects} from "./layot/section/projects/Projects";
 import {Contacts} from "./layot/section/contacts/Contacts";
 import {Footer} from "./layot/footer/Footer";
 import {Education} from "./layot/section/education/Education";
+import Particles from "react-particles";
+import {Particle} from "./components/Particle/Particle";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Particle />
+        <Header />
       <Maine />
         <AboutMe />
         <Education />
