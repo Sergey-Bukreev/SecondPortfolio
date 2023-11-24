@@ -3,7 +3,7 @@ import {Theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
 
 const Contacts = styled.section`
-height: 100vh;
+
   div {
   margin-bottom: 140px;
 }

@@ -6,10 +6,10 @@ import {S} from "./Contacts_Style"
 
 export const Contacts:React.FC = () => {
     return (
-        <S.Contacts id={"contact"}>
+        <S.Contacts >
            <Container>
-               <S.Title>For any questions please mail me:</S.Title>
-               <S.ContactLink>bukreevwork2@gmail.com</S.ContactLink>
+               <S.Title >For any questions please mail me:</S.Title>
+               <S.ContactLink id={"contact"}>bukreevwork2@gmail.com</S.ContactLink>
                <div></div>
 
                <FlexWrapper align={"flex-end"} justify={"space-around"} wrap={"wrap"}>
