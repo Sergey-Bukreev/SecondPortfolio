@@ -1,6 +1,5 @@
 import React from 'react';
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Text} from "../techStack/TechStack";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {S} from "./Project_Style"
 import {Container} from "../../../components/Container";
@@ -10,7 +9,7 @@ export const Projects:React.FC = () => {
         <S.Projects>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
-                <Text>Things I’ve built so far</Text>
+                <S.Text>Things I’ve built so far</S.Text>
                 <FlexWrapper justify={"space-around"} wrap={"wrap"} align={"center"} >
                     <Slider />
                 </FlexWrapper>
