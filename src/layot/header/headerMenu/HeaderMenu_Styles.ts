@@ -1,26 +1,25 @@
 import styled, {css} from "styled-components";
 import {Theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
 // ------- MENU -------------
 const ListItem = styled.li`
-
-  &:hover {
-    background:${Theme.colors.fontSecond};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    transform: scale(1.3);
-
-  }
+    
 `
-const Link = styled.a`
+const NavLink = styled(Link)`
   text-align: center;
   font-family: DM Sans,serif;;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
   color: ${Theme.colors.font};
-  
+
+  &:hover, &.active {
+    background:${Theme.colors.fontSecond};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transform: scale(1.3);
 `
 
 
@@ -118,7 +117,7 @@ const DesktopMenu = styled.nav`
   }`
 export const S = {
     ListItem,
-    Link,
+    NavLink,
     MobileMenu,
     BurgerButton,
     MobileMenuPopup,

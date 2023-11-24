@@ -3,7 +3,8 @@ import {Theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
 
 const Contacts = styled.section`
-div {
+height: 100vh;
+  div {
   margin-bottom: 140px;
 }
   @media ${Theme.media.mobile} {

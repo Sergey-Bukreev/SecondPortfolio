@@ -20,7 +20,7 @@ const iconsData = [
 
 export const TechStack: React.FC = () => {
     return (
-        <S.TechStack>
+        <S.TechStack id={"techStack"}>
             <Container>
                 <SectionTitle>MY Tech Stack</SectionTitle>
                 <S.Text>Technologies I’ve been working with recently</S.Text>

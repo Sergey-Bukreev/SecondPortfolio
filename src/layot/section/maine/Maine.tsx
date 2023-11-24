@@ -8,7 +8,7 @@ import {S} from "./Maine_Styles"
 
 export const Maine: React.FC = () => {
     return (
-        <S.Maine>
+        <S.Maine id={"home"}>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap-reverse"}>
                     <div>

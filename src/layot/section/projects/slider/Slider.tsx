@@ -41,11 +41,8 @@ const items = [
        <S.Slider>
            <AliceCarousel
                mouseTracking
-               items={projects.map((project, index) => (
-                   <div >
-                       <ProjectCard {...project} />
-                   </div>
-               ))}
+               items={projects.map((project, index) => <ProjectCard {...project} />
+               )}
            />
        </S.Slider>
 

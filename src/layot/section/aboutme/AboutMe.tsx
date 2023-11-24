@@ -7,7 +7,7 @@ import {font} from "../../../styles/Common";
 
  export const AboutMe:React.FC = () => {
     return (
-        <StyledAboutMe>
+        <StyledAboutMe id={"about"}>
             <Container>
                 <FlexWrapper align={" center"} direction={"column"} >
                     <SectionTitle>About Me</SectionTitle>

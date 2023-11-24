@@ -70,9 +70,6 @@ const LinkProject = styled.a`
   font-size: 16px;
   margin-right: 30px;
   padding-left: 5px;
-  
- 
-  
   font-weight: 400;
   line-height: 26px; /* 162.5% */
   text-decoration-line: underline;
